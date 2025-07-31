@@ -1,0 +1,28 @@
+{
+  "name": "form-automation-playwright",
+  "version": "1.0.0",
+  "description": "Automation for Student Registration Form using Playwright",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:chrome": "playwright test --project=chrome",
+    "test:firefox": "playwright test --project=firefox",
+    "test:parallel": "playwright test --workers=4",
+    "report": "playwright show-report",
+    "install-browsers": "playwright install",
+    "setup": "node setup.js",
+    "run": "node run-tests.js"
+  },
+  "keywords": ["playwright", "automation", "testing"],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.40.0",
+    "@faker-js/faker": "^8.3.1",
+    "playwright-html-reporter": "^0.1.0"
+  },
+  "dependencies": {
+    "faker": "^6.6.6"
+  }
+} 

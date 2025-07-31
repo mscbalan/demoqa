@@ -1,0 +1,305 @@
+{
+  "config": {
+    "configFile": "C:\\Users\\DELL\\OneDrive\\Desktop\\Assessment\\playwright.config.js",
+    "rootDir": "C:/Users/DELL/OneDrive/Desktop/Assessment/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 2
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "html",
+        {
+          "outputFolder": "playwright-report"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "C:/Users/DELL/OneDrive/Desktop/Assessment/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "chrome",
+        "name": "chrome",
+        "testDir": "C:/Users/DELL/OneDrive/Desktop/Assessment/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Users/DELL/OneDrive/Desktop/Assessment/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "C:/Users/DELL/OneDrive/Desktop/Assessment/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.54.1",
+    "workers": 4,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "studentRegistrationForm.spec.js",
+      "file": "studentRegistrationForm.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Student Registration Form Automation",
+          "file": "studentRegistrationForm.spec.js",
+          "line": 32,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Form validation with specific required data (20 April 1990)",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "timedOut",
+                      "duration": 45790,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Day selector .react-datepicker__day[aria-label*=\"April 20, 1990\"] failed, trying next...\n"
+                        },
+                        {
+                          "text": "Day selector .react-datepicker__day[aria-label*=\"Apr 20, 1990\"] failed, trying next...\n"
+                        },
+                        {
+                          "text": "Successfully selected day 20 using selector: .react-datepicker__day:has-text(\"20\")\n"
+                        },
+                        {
+                          "text": "Date input value after selection: 20 Apr 1990\n"
+                        },
+                        {
+                          "text": "Successfully selected hobby: Sports using label selector\n"
+                        },
+                        {
+                          "text": "Successfully selected hobby: Reading using label selector\n"
+                        },
+                        {
+                          "text": "State selector [data-value=\"NCR\"] failed, trying next...\n"
+                        },
+                        {
+                          "text": "Successfully selected state: NCR using selector: .css-1n7v3ny-option:has-text(\"NCR\")\n"
+                        },
+                        {
+                          "text": "City selector [data-value=\"Delhi\"] failed, trying next...\n"
+                        },
+                        {
+                          "text": "Successfully selected city: Delhi using selector: .css-1n7v3ny-option:has-text(\"Delhi\")\n"
+                        },
+                        {
+                          "text": "Submitted Data:\n"
+                        },
+                        {
+                          "text": "Student Name: John Doe\n"
+                        },
+                        {
+                          "text": "Student Email: john.doe@example.com\n"
+                        },
+                        {
+                          "text": "Gender: \n"
+                        },
+                        {
+                          "text": "Mobile: 1234567890\n"
+                        },
+                        {
+                          "text": "Date of Birth: 20 April,1990\n"
+                        },
+                        {
+                          "text": "Subjects: Maths\n"
+                        },
+                        {
+                          "text": "Hobbies: Sports, Reading\n"
+                        },
+                        {
+                          "text": "Picture: test-image.txt\n"
+                        },
+                        {
+                          "text": "Address: 123 Test Street, Test City, 12345\n"
+                        },
+                        {
+                          "text": "State and City: NCR Delhi\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Fill form with specific required data",
+                          "duration": 20348
+                        }
+                      ],
+                      "startTime": "2025-07-31T05:25:32.853Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\DELL\\OneDrive\\Desktop\\Assessment\\test-results\\studentRegistrationForm-St-4c824-equired-data-20-April-1990--chrome\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\DELL\\OneDrive\\Desktop\\Assessment\\test-results\\studentRegistrationForm-St-4c824-equired-data-20-April-1990--chrome\\error-context.md"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "f319f80ae502f1a77ee5-39e22b13914817d13612",
+              "file": "studentRegistrationForm.spec.js",
+              "line": 117,
+              "column": 5
+            },
+            {
+              "title": "Form validation with specific required data (20 April 1990)",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "timedOut",
+                      "duration": 41332,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                        },
+                        {
+                          "location": {
+                            "file": "C:\\Users\\DELL\\OneDrive\\Desktop\\Assessment\\pages\\StudentRegistrationForm.js",
+                            "column": 25,
+                            "line": 103
+                          },
+                          "message": "Error: page.fill: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#userNumber')\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\pages\\StudentRegistrationForm.js:103\n\n\u001b[0m \u001b[90m 101 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mfill(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mlastNameInput\u001b[33m,\u001b[39m lastName)\u001b[33m;\u001b[39m\n \u001b[90m 102 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mfill(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39memailInput\u001b[33m,\u001b[39m email)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 103 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mfill(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mphoneInput\u001b[33m,\u001b[39m phone)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 104 |\u001b[39m     }\n \u001b[90m 105 |\u001b[39m\n \u001b[90m 106 |\u001b[39m     \u001b[36masync\u001b[39m selectGender(gender) {\u001b[0m\n\u001b[2m    at StudentRegistrationForm.fillPersonalInfo (C:\\Users\\DELL\\OneDrive\\Desktop\\Assessment\\pages\\StudentRegistrationForm.js:103:25)\u001b[22m\n\u001b[2m    at C:\\Users\\DELL\\OneDrive\\Desktop\\Assessment\\tests\\studentRegistrationForm.spec.js:141:13\u001b[22m\n\u001b[2m    at C:\\Users\\DELL\\OneDrive\\Desktop\\Assessment\\tests\\studentRegistrationForm.spec.js:140:9\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Fill form with specific required data",
+                          "duration": 14451,
+                          "error": {
+                            "message": "Error: page.fill: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#userNumber')\u001b[22m\n",
+                            "stack": "Error: page.fill: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#userNumber')\u001b[22m\n\n    at StudentRegistrationForm.fillPersonalInfo (C:\\Users\\DELL\\OneDrive\\Desktop\\Assessment\\pages\\StudentRegistrationForm.js:103:25)\n    at C:\\Users\\DELL\\OneDrive\\Desktop\\Assessment\\tests\\studentRegistrationForm.spec.js:141:13\n    at C:\\Users\\DELL\\OneDrive\\Desktop\\Assessment\\tests\\studentRegistrationForm.spec.js:140:9",
+                            "location": {
+                              "file": "C:\\Users\\DELL\\OneDrive\\Desktop\\Assessment\\pages\\StudentRegistrationForm.js",
+                              "column": 25,
+                              "line": 103
+                            },
+                            "snippet": "\u001b[90m   at \u001b[39m..\\pages\\StudentRegistrationForm.js:103\n\n\u001b[0m \u001b[90m 101 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mfill(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mlastNameInput\u001b[33m,\u001b[39m lastName)\u001b[33m;\u001b[39m\n \u001b[90m 102 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mfill(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39memailInput\u001b[33m,\u001b[39m email)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 103 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mfill(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mphoneInput\u001b[33m,\u001b[39m phone)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 104 |\u001b[39m     }\n \u001b[90m 105 |\u001b[39m\n \u001b[90m 106 |\u001b[39m     \u001b[36masync\u001b[39m selectGender(gender) {\u001b[0m"
+                          }
+                        }
+                      ],
+                      "startTime": "2025-07-31T05:25:33.022Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\DELL\\OneDrive\\Desktop\\Assessment\\test-results\\studentRegistrationForm-St-4c824-equired-data-20-April-1990--firefox\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\DELL\\OneDrive\\Desktop\\Assessment\\test-results\\studentRegistrationForm-St-4c824-equired-data-20-April-1990--firefox\\error-context.md"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "f319f80ae502f1a77ee5-dc72dbb1ee5a94f65014",
+              "file": "studentRegistrationForm.spec.js",
+              "line": 117,
+              "column": 5
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-07-31T05:24:57.939Z",
+    "duration": 86542.894,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 2,
+    "flaky": 0
+  }
+}
